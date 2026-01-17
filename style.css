@@ -86,3 +86,49 @@ z-index: -1;
 .btn-signing:hover{
     background-color: white;
 }
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: calc(90vh - 6rem);
+
+}
+.content{
+   max-width: 40rem;
+   margin-left: 10%;
+   z-index: 999;
+}
+.tagbox{
+   position: relative;
+   width: 18rem;
+   height: 2.5rem;
+   border-radius: 50px;
+   background: linear-gradient(to right, #656565, #7f42a7,#6600c5,#5300a0,#757575,#656565);
+   background-size: 200%;
+   animation: animationGradient 2.5s linear infinite;
+   box-shadow: 0 0 15px rgb(255, 255, 255 , 0.3);
+
+}
+@keyframes animationGradient{
+   to {
+      background-position: 200%;
+   }
+}
+.tagbox .tag{
+   position: absolute;
+   inset: 3px 3px 3px 3px;
+   background-color: black;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+.tagbox .tag:hover{
+   color: #5300a0;
+}
+.content h1{
+   font-size: 4rem;
+
+}
